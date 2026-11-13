@@ -1,5 +1,7 @@
 # Alimentar el sistema con materiales propios
 
+[English version](feeding.en.md)
+
 ## 1. Voces: origen y consentimiento
 
 Sólo usá tu voz o la de alguien que dio **consentimiento por escrito** para clonarla y utilizar el resultado en estos videos. Nunca clones a terceros sin permiso ni a figuras públicas. Guardá el permiso fuera del repositorio público; acordá alcance, duración y posible revocación.

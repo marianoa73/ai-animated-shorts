@@ -1,5 +1,7 @@
 # Instalación y primera ejecución
 
+[English version](install.en.md)
+
 ## Prerrequisitos
 
 Host Linux x86_64, Docker y Compose v2 con daemon accesible, ≥25 GiB de disco libre y ≥16 GiB de RAM recomendados (32 GiB preferibles). `src/preflight.sh` sólo consulta, no instala ni modifica servicios. Modelos, imágenes de Docker y caché pueden superar ese mínimo. Python 3.11 corre dentro de voice/qa; el render Noble usa el Python de la distribución para helpers. En el host, el coordinador necesita Python 3.11 o posterior.

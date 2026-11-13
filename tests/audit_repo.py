@@ -21,7 +21,7 @@ for p in ROOT.rglob('*'):
             if ':' in href or href.startswith('#'):continue
             target=(p.parent/href.split('#')[0])
             if not target.exists():fail.append(f'{rel}: missing link {href}')
-required=['README.md','README.en.md','LICENSE','NOTICE.md','SECURITY.md','CHANGELOG.md','docs/feeding.md','docs/limitations.md','skill/ai-animated-shorts/SKILL.md','docker-compose.yml']
+required=['README.md','README.es.md','LICENSE','NOTICE.md','SECURITY.md','CHANGELOG.md','docs/feeding.md','docs/limitations.md','skill/ai-animated-shorts/SKILL.md','docker-compose.yml']
 for name in required:
     if not (ROOT/name).is_file():fail.append(f'missing {name}')
 for i,name in enumerate(['flujo','logica-control','hardware-red','herramientas','estados'],1):
