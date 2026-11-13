@@ -17,9 +17,9 @@
    bash tests/test_preflight.sh
    ```
 
-![From script to review](docs/assets/01-flujo.svg)
+![From script to review](docs/assets/01-flujo.en.svg)
 
-[High-resolution PNG](docs/assets/01-flujo.png) · Diagrams are in Spanish; each one is described in the text around it.
+[High-resolution PNG](docs/assets/01-flujo.en.png) · [Versión en español](README.es.md)
 
 ## What it looks like
 
@@ -79,7 +79,7 @@ Intel i5 mini PC with four cores and 32 GB, Ubuntu 24.04, Docker, no GPU. A Rasp
 
 Measurements from the reference project on an **i5-10210U, eight threads, 32 GB**: a 66 s video ≈ 19–31 min of rendering; a 40 s video ≈ 19 min; voice ≈ 20–35 s per line; MP4 ≈ 250 MB. They are not benchmarks of this implementation nor guarantees of size or performance.
 
-![Hardware and privacy](docs/assets/03-hardware-red.svg)
+![Hardware and privacy](docs/assets/03-hardware-red.en.svg)
 
 ## Assisted installation
 
