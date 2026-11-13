@@ -1,0 +1,1 @@
+{"name":"ai-animated-shorts","version":"0.1.0","private":true,"dependencies":{"playwright-core":"1.49.1","three":"0.170.0"},"scripts":{"test:render":"node tests/render_smoke.cjs"}}

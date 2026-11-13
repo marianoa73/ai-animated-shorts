@@ -1,0 +1,42 @@
+name: ai-animated-shorts
+x-local: &local
+  working_dir: /work
+  volumes:
+    - ./:/work
+  network_mode: none
+  environment:
+    HF_HOME: /work/cache/models/chatterbox
+    HF_HUB_OFFLINE: '1'
+    HF_HUB_DISABLE_TELEMETRY: '1'
+    DO_NOT_TRACK: '1'
+    TMPDIR: /work/cache/tmp
+  user: "${LOCAL_UID:-1000}:${LOCAL_GID:-1000}"
+services:
+  voice:
+    <<: *local
+    image: ai-animated-shorts-voice:0.1.0
+    build: ./docker/voice
+    profiles: [tools]
+  qa:
+    <<: *local
+    image: ai-animated-shorts-qa:0.1.0
+    build: ./docker/qa
+    profiles: [tools]
+  render:
+    <<: *local
+    image: ai-animated-shorts-render:0.1.0
+    build: ./docker/render
+    profiles: [tools]
+    shm_size: 1gb
+    environment:
+      NODE_PATH: /opt/renderer/node_modules
+      TMPDIR: /work/cache/tmp
+      PIPER: /opt/piper/piper
+  web:
+    image: nginx:1.27-alpine
+    ports: ["127.0.0.1:8080:80"]
+    volumes:
+      - ./web/index.html:/usr/share/nginx/html/index.html:ro
+      - ./web/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./output:/media:ro
+    restart: unless-stopped

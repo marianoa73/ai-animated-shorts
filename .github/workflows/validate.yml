@@ -1,0 +1,24 @@
+name: validate
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python3 -m unittest discover -s tests -v
+      - run: bash -n src/preflight.sh src/new_episode.sh tests/test_preflight.sh
+      - run: bash tests/test_preflight.sh
+      - run: python3 tests/audit_repo.py
+      - run: docker compose config --quiet
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --ignore-scripts
+      - run: node --check src/render/render.js
+      - run: node --input-type=module --check < src/render/scene.js
+      - run: node --input-type=module --check < src/render/characters.js

@@ -1,0 +1,26 @@
+{
+  "label": "Personaje B",
+  "palette": {
+    "skin": "#d7af86",
+    "hair": "#483b31",
+    "top": "#cb7548",
+    "bottom": "#414e62",
+    "shoes": "#e2e0d7",
+    "eyes": "#18191b"
+  },
+  "proportions": {
+    "headSize": 0.58,
+    "torsoHeight": 0.65,
+    "torsoWidth": 0.5,
+    "legHeight": 0.65
+  },
+  "features": {
+    "hair": true,
+    "beard": false,
+    "glasses": true
+  },
+  "references": {
+    "front": "characters/refs/example-b-front.png",
+    "three_quarter": "characters/refs/example-b-three-quarter.png"
+  }
+}

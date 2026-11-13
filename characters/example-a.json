@@ -1,0 +1,26 @@
+{
+  "label": "Personaje A",
+  "palette": {
+    "skin": "#b98662",
+    "hair": "#483b31",
+    "top": "#417c84",
+    "bottom": "#414e62",
+    "shoes": "#e2e0d7",
+    "eyes": "#18191b"
+  },
+  "proportions": {
+    "headSize": 0.53,
+    "torsoHeight": 0.65,
+    "torsoWidth": 0.5,
+    "legHeight": 0.65
+  },
+  "features": {
+    "hair": true,
+    "beard": false,
+    "glasses": false
+  },
+  "references": {
+    "front": "characters/refs/example-a-front.png",
+    "three_quarter": "characters/refs/example-a-three-quarter.png"
+  }
+}

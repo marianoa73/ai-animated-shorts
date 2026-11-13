@@ -1,0 +1,113 @@
+{
+  "title": "Un plan pequeño",
+  "scenario": "studio",
+  "language": "es",
+  "characters": [
+    "example-a",
+    "example-b"
+  ],
+  "width": 720,
+  "height": 1280,
+  "fps": 30,
+  "subtitles": false,
+  "pause": 0.15,
+  "music": true,
+  "lines": [
+    {
+      "who": "example-a",
+      "text": "Hoy traje una pregunta que parece sencilla, pero no encuentro dónde empieza la respuesta.",
+      "shot": "medium",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "Podemos empezar por decirla en voz alta, sin buscar una explicación perfecta desde el principio.",
+      "shot": "close",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-a",
+      "text": "Quiero ordenar todos mis planes y dejar espacio para hacer algo que todavía no imaginé.",
+      "shot": "orbit",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "Entonces no llenemos cada casillero de la agenda, porque las sorpresas también necesitan lugar.",
+      "shot": "pan",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-a",
+      "text": "Pensaba que organizarse era saber exactamente qué iba a pasar durante toda la semana.",
+      "shot": "medium",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "A veces alcanza con elegir el siguiente paso y aceptar que después puede cambiar el camino.",
+      "shot": "close",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-a",
+      "text": "Podría empezar con una sola tarea pequeña y ver qué aprendo antes de prometer demasiado.",
+      "shot": "orbit",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "Eso suena razonable, aunque seguramente aparezca una idea nueva cuando estés por terminar.",
+      "shot": "pan",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-a",
+      "text": "Si aparece, voy a anotarla sin abandonar lo que ya estaba haciendo en ese momento.",
+      "shot": "medium",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "Podemos guardar esa lista y revisarla juntos cuando termine la primera parte del trabajo.",
+      "shot": "close",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-a",
+      "text": "Entonces mi gran plan consiste en empezar con algo pequeño y dejar de planificar por un rato.",
+      "shot": "orbit",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    },
+    {
+      "who": "example-b",
+      "text": "Exactamente: acabamos de organizar una reunión para decidir que ya podemos terminar la reunión.",
+      "shot": "closing",
+      "face": "neutral",
+      "transition": "cut",
+      "seed": 1
+    }
+  ]
+}

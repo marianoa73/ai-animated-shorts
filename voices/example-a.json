@@ -1,0 +1,10 @@
+{
+  "sample": "voices/samples/example-a.wav",
+  "language": "es",
+  "exaggeration": 0.5,
+  "cfg": 0.5,
+  "temperature": 0.8,
+  "tempo": 1,
+  "phrase_pause": 0.15,
+  "piper_model": null
+}
